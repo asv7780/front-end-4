@@ -19,10 +19,21 @@ html h1
 html body h1
 body h1
 body > h1
+h1#some-id
+h1.class-h
+h1[id]
+h1[class]
+h1[class="class-h"]
+h1[style]
+h1[style="color: red;"]
+body h1 some-id
+body h1 class-h
+body h1 color: red;
+html h1 some-id
+html h1 class-h
+html h1 color: red;
 some-id
-body some-id h1
-some-id h1
-class-h some-id color: red;
+.color: red;
 
 <h2 class="class-h"> Способи додавання CSS на сторінку </h2>
 <div> Lorem ipsum dolor.</div>
@@ -39,9 +50,20 @@ html body span
 body span
 body > span
 <ul>
+  ul
+  html ul
+  html body ul
+  body ul
+  body > ul
+  ul span
+  ul li span
+  ul li > span
+  ul span + span
   <li><span>Lorem ipsum.</span></li>
   <li>Lorem ipsum dolor sit amet.</li>
   <li><span>Lorem ipsum dolor sit amet,</span>consectetur.</li>
+
+  ul span + li
 </ul>
 <ol>
   ol
@@ -49,6 +71,10 @@ body > span
   html body ol
   body ol
   body > ol
+  .some class
+  .some class ol
+  .some class span
+  .some class ol span
   <li class="some-class"><span>Lorem ipsum.</span></li>
 </ol>
 </body>

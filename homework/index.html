@@ -12,49 +12,91 @@ html
 <body>
 body
 html body
-html > body
+html>body
 <h1 id="some-id" class="class-h" style="color: red;">Доброго дня</h1>
 h1
 html h1
 html body h1
 body h1
-body > h1
+body>h1
 h1#some-id
 h1.class-h
+h1.color: red;
 h1[id]
 h1[class]
 h1[class="class-h"]
 h1[style]
 h1[style="color: red;"]
-body h1 some-id
-body h1 class-h
-body h1 color: red;
-html h1 some-id
-html h1 class-h
-html h1 color: red;
-some-id
+body h1#some-id
+body h1.class-h
+body h1.color: red;
+html h1#some-id
+html h1.class-h
+html h1.color: red;
+html body#some-id
+html body h1.class-h
+html body h1.color: red;
+html[id]
+html[style]
+html[style="color: red;"]
+html body[id]
+html body[style]
+html body[style="color: red;"]
+#some-id
 .color: red;
+html#some-id
+html.color: red;
+body#some-id
+body.color: red;
 
 <h2 class="class-h"> Способи додавання CSS на сторінку </h2>
+h2
+html h2
+html body h2
+body h2
+body>h2
+h2.class-h
+h2[class]
+h2[class="class-h"]
+body h2.class-h
+html body h2.class-h
+
 <div> Lorem ipsum dolor.</div>
 div
 html div
 html body div
 body div
+body>div
 
 <p lang="en">Lorem ipsum dolor sit amet.</p>
+p
+html p
+html body p
+body p
+body>p
+html[lang]
+html[lang="en"]
+html body[lang]
+html body[lang="en"]
+p[lang]
+.lang
+p.lang
+html.lang
+body.lang
+html body.lang
+
 <span> Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
 span
 html span
 html body span
 body span
-body > span
+body>span
 <ul>
   ul
   html ul
   html body ul
   body ul
-  body > ul
+  body>ul
   ul span
   ul li span
   ul li > span
@@ -71,10 +113,16 @@ body > span
   html body ol
   body ol
   body > ol
-  .some class
-  .some class ol
-  .some class span
-  .some class ol span
+  body ol.some-class
+  html ol.some-class
+  html body.some-class
+  body ol.some-class
+  .some-class
+  ol.some-class
+  span.some-class
+  ol span.some-class
+  ol[class]
+  ol[class="some-class"]
   <li class="some-class"><span>Lorem ipsum.</span></li>
 </ol>
 </body>

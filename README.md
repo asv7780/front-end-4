@@ -8,7 +8,10 @@
   - `inline-block`
   - `table-row`
   - `table-cell`
+<<<<<<< HEAD
   - `run-in`
+=======
+>>>>>>> ea3771d8ef6f6dace63742bb9cf4a8673a08d1a5
 1. `width`
 1. `height`
 1. `margin`
@@ -26,7 +29,10 @@
   - `relative`
   - `absolute`
   - `fixed`
+<<<<<<< HEAD
   - `sticky`
+=======
+>>>>>>> ea3771d8ef6f6dace63742bb9cf4a8673a08d1a5
 1. `float`
 1. `clear`
 
@@ -46,3 +52,7 @@
 - [CSS позиционирование](http://html5book.ru/css-position/)
 - [Как работает автоматическое позиционирование в CSS?](http://frontender.info/how-does-auto-positioning-work-in-css/)
 - [Магические числа в CSS](http://frontender.info/magic-numbers-in-css/)
+<<<<<<< HEAD
+=======
+- [Generator vertical rhythm](https://www.gridlover.net/try)
+>>>>>>> ea3771d8ef6f6dace63742bb9cf4a8673a08d1a5

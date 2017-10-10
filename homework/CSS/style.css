@@ -3,7 +3,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 div {
-    font-family: 'Montserrat light', sans-serif;
+    font-weight: 300;
     font-size: 14px;
     text-align: left;
     line-height: 1.8571;
@@ -11,7 +11,7 @@ div {
     letter-spacing: 0;
 }
 h1 {
-    font-family: 'Montserrat regular', sans-serif;
+    font-weight: 400;
     font-size: 24px;
     text-align: left;
     line-height: 1.0833;
@@ -19,15 +19,16 @@ h1 {
     letter-spacing: 0;
 }
 a {
-    font-family: 'Montserrat light', sans-serif;
+    font-weight: 300;
     font-size: 14px;
     text-align: left;
     line-height:1.8571;
     color: #666;
+    letter-spacing: 0;
     text-decoration: none;
 }
 p {
-    font-family: 'Montserrat light', sans-serif;
+    font-weight: 300;
     font-size: 15px;
     text-align: justify;
     line-height: 1.7333;

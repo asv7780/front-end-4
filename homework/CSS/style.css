@@ -9,6 +9,7 @@ p {
 
 p::before {
     content: counter(pages);
+    color: crimson;
 }
 
 .container {

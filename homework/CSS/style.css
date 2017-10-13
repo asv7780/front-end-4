@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    counter-reset: pages;
+}
+
+p {
+    counter-increment: pages;
+}
+
+p::before {
+    content: counter(pages);
+}
+
+.container {
+    position: relative;
+    width: 1920px;
+    height: 534px;
+    background-color: #555;
+}
+.inner {
+    display: block;
+    position: absolute;
+    width: 920px;
+    height: 514px;
+    left: 517px;
+    overflow: hidden;
+    background-color:#fff;
+}

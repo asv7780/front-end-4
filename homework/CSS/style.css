@@ -1,3 +1,132 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+.div-1 {
+    width: 1920px;
+    height: 35px;
+    background-color: #2b2b2b;
+    box-sizing: content-box;
+}
+.tel {
+    font-weight: 300;
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.7142;
+    text-decoration: none;
+    color: #7f7f7f;
+    padding-left: 375px;
+}
+
+.register {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: right;
+    line-height: 1.7142;
+    text-decoration: none;
+    color: #666;
+    padding-left: 1002px;
+}
+
+.or {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: right;
+    line-height: 2;
+    text-decoration: none;
+    color: #3b3b3b;
+}
+
+.wrapper {
+    width: 1920px;
+    height: 168px;
+    background-color: #2b2b2b;
+    text-align: justify;
+}
+
+
+form.finder {
+    background-color: #2b2b2b;
+    width: 275px;
+    height: 46px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0;
+    border: 1px solid #b9b9bb;
+
+
+}
+form.finder input {
+    float: left;
+    border: none;
+    padding: 0;
+    font: 13px sans-serif;
+    height: 43px;
+    width: 221px;
+    margin: 0;
+    -webkit-appearance: none;
+    outline: none;
+    background-color: #2b2b2b;
+}
+form.finder button {
+    float: right;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 35px;
+    height: 43px;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    background-color: #2b2b2b;
+}
+.home {
+    text-decoration: none;
+    color: #be926f;
+}
+
+.LR {
+    padding-left: 49px;
+    padding-right: 55px;
+    color: #666;
+    text-decoration: none;
+}
+
+.OF {
+    color: #666;
+    text-decoration: none;
+}
+
+.BD {
+    padding-left: 49px;
+    padding-right: 58px;
+    color: #666;
+    text-decoration: none;
+}
+
+.BG {
+    color: #666;
+    text-decoration: none;
+}
+
+.CT {
+    color: #666;
+    text-decoration: none;
+    padding-left: 46px;
+}
+.Logo {
+    padding-left: 375px;
+}
+.Bag {
+    border-style: none;
+    padding-left: 531px;
+}
+.nav {
+    padding-left: 375px;
+    padding-top: 33px;
+}
+
+
 
 
 

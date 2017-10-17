@@ -1,10 +1,10 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
+
 }
 .div-1 {
-    width: 1920px;
-    height: 35px;
+    width: 1170px;
+    margin: 0;
     background-color: #2b2b2b;
     box-sizing: content-box;
 }
@@ -15,7 +15,7 @@ body {
     line-height: 1.7142;
     text-decoration: none;
     color: #7f7f7f;
-    padding-left: 375px;
+
 }
 
 .register {
@@ -25,7 +25,8 @@ body {
     line-height: 1.7142;
     text-decoration: none;
     color: #666;
-    padding-left: 1002px;
+    float: right;
+
 }
 
 .or {
@@ -38,10 +39,10 @@ body {
 }
 
 .wrapper {
-    width: 1920px;
-    height: 168px;
+    width: 1170px;
     background-color: #2b2b2b;
-    text-align: justify;
+    padding-top: 31px;
+    padding-bottom: 25px;
 }
 
 
@@ -53,6 +54,7 @@ form.finder {
     overflow: hidden;
     padding: 0;
     border: 1px solid #b9b9bb;
+    float: right;
 
 
 }
@@ -63,7 +65,7 @@ form.finder input {
     font: 13px sans-serif;
     height: 43px;
     width: 221px;
-    margin: 0;
+    margin: auto;
     -webkit-appearance: none;
     outline: none;
     background-color: #2b2b2b;
@@ -80,55 +82,66 @@ form.finder button {
     text-align: center;
     background-color: #2b2b2b;
 }
+.info li {
+    display: inline-block;
+
+
+}
 .home {
     text-decoration: none;
-    color: #be926f;
+    color: #fff;
+    padding: 0;
 }
 
 .LR {
     padding-left: 49px;
     padding-right: 55px;
-    color: #666;
     text-decoration: none;
+    color: #fff;
 }
-
 .OF {
-    color: #666;
     text-decoration: none;
+    color: #fff;
 }
-
 .BD {
     padding-left: 49px;
     padding-right: 58px;
-    color: #666;
     text-decoration: none;
+    color: #fff;
 }
-
+.BD {
+    text-decoration: none;
+    color: #fff;
+}
 .BG {
-    color: #666;
     text-decoration: none;
+    color: #fff;
 }
-
 .CT {
-    color: #666;
-    text-decoration: none;
     padding-left: 46px;
+    text-decoration: none;
+    color: #fff;
 }
 .Logo {
-    padding-left: 375px;
+    text-decoration: none;
+    color: #fff;
 }
 .Bag {
     border-style: none;
-    padding-left: 531px;
-}
-.nav {
-    padding-left: 375px;
-    padding-top: 33px;
+    padding-left: 430px;
 }
 
-
-
-
+a:hover {
+    color: #be926f;
+}
+.clear {
+    clear: both;
+}
+.Bag::after {
+    content: attr(data-item);
+    background-color: #be926f;
+    display: inline-block;
+}
 
 
 

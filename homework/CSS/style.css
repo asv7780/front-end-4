@@ -128,7 +128,7 @@ form.finder button {
 }
 .Bag {
     border-style: none;
-    padding-left: 430px;
+    padding-left: 440px;
 }
 
 a:hover {
@@ -137,10 +137,12 @@ a:hover {
 .clear {
     clear: both;
 }
-.Bag::after {
+li.Bag::after {
     content: attr(data-item);
     background-color: #be926f;
     display: inline-block;
+    color: #fff;
+    font-size: 12px;
 }
 
 

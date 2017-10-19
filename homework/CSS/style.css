@@ -4,12 +4,20 @@ body {
 }
 
 p {
+    position: relative;
     counter-increment: pages;
+
 }
 
 p::before {
     content: counter(pages);
-    color: crimson;
+    position: relative;
+    display: inline-block;
+    color: #d09494;
+    width: 50px;
+    float: left;
+    text-align: center;
+    background-color: #cc4242;
 }
 
 .container {
@@ -20,10 +28,14 @@ p::before {
 }
 .inner {
     display: block;
-    position: absolute;
+    position: relative;
     width: 920px;
     height: 514px;
     left: 517px;
     overflow: hidden;
-    background-color:#fff;
+    text-align: left;
+    background-color: #ccc;
+}
+p::nth-child (even) {
+    background-color: #fff;
 }

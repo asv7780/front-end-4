@@ -1,149 +1,100 @@
-body {
+ html {
     font-family: 'Montserrat', sans-serif;
 
 }
-.div-1 {
+ body {
+     min-width: 1170px;
+ }
+.container{
     width: 1170px;
-    margin: 0;
+    margin: 0 auto;
+
+}
+.clearfix::after {
+    display: table;
+    clear: both;
+    content: '';
+}
+.header {
+    background-color: #232323;
+}
+.header-top {
     background-color: #2b2b2b;
-    box-sizing: content-box;
+}
+.tel,
+.user {
+    padding: 5px 0;
 }
 .tel {
+    display: inline-block;
     font-weight: 300;
     font-size: 14px;
-    text-align: left;
     line-height: 1.7142;
     text-decoration: none;
     color: #7f7f7f;
 
 }
-
-.register {
+.user {
+    float: right;
+}
+.user a {
     font-weight: 400;
     font-size: 14px;
-    text-align: right;
     line-height: 1.7142;
     text-decoration: none;
     color: #666;
-    float: right;
 
 }
+.user a:hover {
+    text-decoration: underline;
+}
 
-.or {
+.user span {
     font-weight: 400;
     font-size: 12px;
-    text-align: right;
-    line-height: 2;
-    text-decoration: none;
+    margin: 0 10px;
     color: #3b3b3b;
 }
-
-.wrapper {
-    width: 1170px;
-    background-color: #2b2b2b;
-    padding-top: 31px;
-    padding-bottom: 25px;
-}
-
-
-form.finder {
-    background-color: #2b2b2b;
-    width: 275px;
-    height: 46px;
-    margin: auto;
-    overflow: hidden;
-    padding: 0;
-    border: 1px solid #b9b9bb;
+.header-middle form {
     float: right;
-
-
+    border: 1px solid #323232;
 }
-form.finder input {
-    float: left;
-    border: none;
-    padding: 0;
-    font: 13px sans-serif;
-    height: 43px;
-    width: 221px;
-    margin: auto;
-    -webkit-appearance: none;
-    outline: none;
-    background-color: #2b2b2b;
+.logo,
+.header-middle form {
+    margin: 30px 0 26px;
 }
-form.finder button {
-    float: right;
-    border: none;
-    padding: 0;
-    margin: 0;
-    width: 35px;
-    height: 43px;
-    position: relative;
-    cursor: pointer;
-    text-align: center;
-    background-color: #2b2b2b;
-}
-.info li {
+.logo {
     display: inline-block;
-
+}
+.search,
+.search::placeholder {
+    font-weight: 200;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.8461;
+}
+ .search {
+     padding: 10px 20px;
+    background: transparent;
+    border: none;
+    color: #fff;
 
 }
-.home {
-    text-decoration: none;
-    color: #fff;
+.header-middle button {
     padding: 0;
+    border: none;
+    background: transparent url("../images/Search.png")center center no-repeat;
+    width: 54px;
+    height: 44px;
 }
-
-.LR {
-    padding-left: 49px;
-    padding-right: 55px;
-    text-decoration: none;
-    color: #fff;
-}
-.OF {
-    text-decoration: none;
-    color: #fff;
-}
-.BD {
-    padding-left: 49px;
-    padding-right: 58px;
-    text-decoration: none;
-    color: #fff;
-}
-.BD {
-    text-decoration: none;
-    color: #fff;
-}
-.BG {
-    text-decoration: none;
-    color: #fff;
-}
-.CT {
-    padding-left: 46px;
-    text-decoration: none;
-    color: #fff;
-}
-.Logo {
-    text-decoration: none;
-    color: #fff;
-}
-.Bag {
-    border-style: none;
-    padding-left: 440px;
-}
-
-a:hover {
-    color: #be926f;
-}
-.clear {
-    clear: both;
-}
-li.Bag::after {
-    content: attr(data-item);
-    background-color: #be926f;
+.search,
+.header-middle button {
     display: inline-block;
-    color: #fff;
-    font-size: 12px;
+    vertical-align: top;
 }
+
+
+
 
 
 

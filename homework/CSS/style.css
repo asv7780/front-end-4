@@ -2,14 +2,33 @@ body {
     margin: 0;
     counter-reset: pages;
 }
+.wrapper {
+}
+.container {
+    width: 1100px;
+    background-color: #555;
+    padding-bottom: 10px;
 
-p {
-    position: relative;
+}
+.inner {
+    margin: 0 auto;
+    padding: 0;
+    width: 920px;
+    background-color: #ccc;
+
+}
+li {
     counter-increment: pages;
+
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.2857;
+
 
 }
 
-p::before {
+
+li::before {
     content: counter(pages);
     position: relative;
     display: inline-block;
@@ -20,22 +39,6 @@ p::before {
     background-color: #cc4242;
 }
 
-.container {
-    position: relative;
-    width: 1920px;
-    height: 534px;
-    background-color: #555;
-}
-.inner {
-    display: block;
-    position: relative;
-    width: 920px;
-    height: 514px;
-    left: 517px;
-    overflow: hidden;
-    text-align: left;
-    background-color: #ccc;
-}
-p::nth-child (even) {
+li:nth-child(even){
     background-color: #fff;
 }

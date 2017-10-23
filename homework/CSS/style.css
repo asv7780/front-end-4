@@ -1,0 +1,145 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+
+}
+body {
+    min-width: 320px;
+    background-color: red;
+}
+.container{
+    max-width: 1170px;
+    padding: 0 15px;
+
+}
+.clearfix::after {
+    display: table;
+    clear: both;
+    content: '';
+}
+.header {
+    background-color: #232323;
+}
+.header-top {
+    background-color: #2b2b2b;
+}
+.tel,
+.user {
+    padding: 5px 0;
+}
+.tel {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.7142;
+    text-decoration: none;
+    color: #7f7f7f;
+
+}
+.user {
+    float: right;
+}
+.user a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7142;
+    text-decoration: none;
+    color: #666;
+
+}
+.user a:hover {
+    text-decoration: underline;
+}
+
+.user span {
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0 10px;
+    color: #3b3b3b;
+}
+.header-middle form {
+    float: right;
+    border: 1px solid #323232;
+}
+.logo,
+.header-middle form {
+    margin: 30px 0 26px;
+}
+.logo {
+    display: inline-block;
+}
+.search,
+.search::placeholder {
+    font-weight: 200;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.8461;
+}
+.search {
+    padding: 10px 4px 10px 20px;
+    background: transparent;
+    border: none;
+    color: #fff;
+
+}
+.header-middle button {
+    padding: 0;
+    border: none;
+    background: transparent url("../images/Search.png")center center no-repeat;
+    width: 54px;
+    height: 44px;
+}
+.search,
+.header-middle button {
+    display: inline-block;
+    vertical-align: top;
+}
+.nav {
+    padding-bottom: 28px;
+}
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin-left: -20px;
+}
+.nav li {
+    display: inline-block;
+}
+.nav li + li {
+    margin-left: 10px;
+}
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px;
+
+}
+.nav .active,
+.nav a:hover {
+    color: #be926f;
+}
+
+.bag {
+    float: right;
+    width: 17px;
+    height: 22px;
+    padding: 10px;
+    background: url("../images/Bag.png") center center no-repeat;
+
+}
+.bag::after {
+    position: relative;
+    top: -8px;
+    right: -8px;
+    content: "2";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 18px;
+    color: black;
+    background-color: #be926f;
+    border-radius: 100%;
+    text-align: center;
+}

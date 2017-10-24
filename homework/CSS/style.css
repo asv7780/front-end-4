@@ -22,6 +22,15 @@ body {
 .header-top {
     background-color: #2b2b2b;
 }
+
+@media (max-width: 425px) {
+    .tel,
+    .user {
+        width: 100%;
+        text-align: center;
+    }
+
+}
 .tel,
 .user {
     padding: 5px 0;
@@ -60,12 +69,36 @@ body {
     float: right;
     border: 1px solid #323232;
 }
+@media (max-width: 425px) {
+    .header-middle form {
+        float: none;
+        position: relative;
+        border: 1px solid #323232;
+    }
+    .search {
+        width: 100%;
+        padding: 10px 60px 10px 20px;
+    }
+    .header-middle button {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
 .logo,
 .header-middle form {
     margin: 30px 0 26px;
 }
 .logo {
     display: inline-block;
+}
+@media  (max-width: 425px){
+    .logo {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
 }
 .search,
 .search::placeholder {
@@ -75,7 +108,7 @@ body {
     line-height: 1.8461;
 }
 .search {
-    padding: 10px 4px 10px 20px;
+    padding: 10px 60px 10px 20px;
     background: transparent;
     border: none;
     color: #fff;
@@ -101,18 +134,24 @@ body {
     padding: 0;
     margin-left: -20px;
 }
-.nav li {
-    display: inline-block;
+
+@media (min-width: 725px){
+    .nav li {
+        display: inline-block;
+    }
+    .nav li + li {
+        margin-left: 10px;
+    }
 }
-.nav li + li {
-    margin-left: 10px;
-}
+
 .nav a {
+    display: inline-block;
+    font-weight: 400;
     color: #ffffff;
     text-decoration: none;
     font-size: 16px;
     line-height: 1.5;
-    padding: 20px;
+    padding: 10px 20px;
 
 }
 .nav .active,

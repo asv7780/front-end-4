@@ -35,6 +35,8 @@ ul li::before {
     counter-increment: list;
     position: relative;
     display: block;
+    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+    vertical-align: middle;
     color: #d09494;
     width: 50px;
     height: 51px;

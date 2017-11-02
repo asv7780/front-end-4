@@ -2,23 +2,26 @@ html {
     font-family: 'Montserrat', sans-serif;
 
 }
+
 body {
     min-width: 320px;
-   
 }
-.container{
+
+.container {
     max-width: 1170px;
     padding: 0 15px;
-
 }
+
 .clearfix::after {
+    content: '';
     display: table;
     clear: both;
-    content: '';
 }
+
 .header {
     background-color: #232323;
 }
+
 .header-top {
     background-color: #2b2b2b;
 }
@@ -29,12 +32,13 @@ body {
         width: 100%;
         text-align: center;
     }
-
 }
+
 .tel,
 .user {
     padding: 5px 0;
 }
+
 .tel {
     display: inline-block;
     font-weight: 300;
@@ -42,11 +46,12 @@ body {
     line-height: 1.7142;
     text-decoration: none;
     color: #7f7f7f;
-
 }
+
 .user {
     float: right;
 }
+
 .user a {
     font-weight: 400;
     font-size: 14px;
@@ -55,6 +60,7 @@ body {
     color: #666;
 
 }
+
 .user a:hover {
     text-decoration: underline;
 }
@@ -65,20 +71,24 @@ body {
     margin: 0 10px;
     color: #3b3b3b;
 }
+
 .header-middle form {
     float: right;
     border: 1px solid #323232;
 }
-@media (max-width: 425px) {
+
+@media (max-width: 480px) {
     .header-middle form {
         float: none;
         position: relative;
         border: 1px solid #323232;
     }
+
     .search {
         width: 100%;
         padding: 10px 60px 10px 20px;
     }
+
     .header-middle button {
         position: absolute;
         top: 0;
@@ -90,16 +100,19 @@ body {
 .header-middle form {
     margin: 30px 0 26px;
 }
+
 .logo {
     display: inline-block;
 }
-@media  (max-width: 425px){
+
+@media (max-width: 480px) {
     .logo {
         display: inline-block;
         text-align: center;
         width: 100%;
     }
 }
+
 .search,
 .search::placeholder {
     font-weight: 200;
@@ -107,6 +120,7 @@ body {
     font-size: 13px;
     line-height: 1.8461;
 }
+
 .search {
     padding: 10px 60px 10px 20px;
     background: transparent;
@@ -114,31 +128,36 @@ body {
     color: #fff;
 
 }
+
 .header-middle button {
     padding: 0;
     border: none;
-    background: transparent url("../images/Search.png")center center no-repeat;
+    background: transparent url("../images/Search.png") center center no-repeat;
     width: 54px;
     height: 44px;
 }
+
 .search,
 .header-middle button {
     display: inline-block;
     vertical-align: top;
 }
+
 .nav {
     padding-bottom: 28px;
 }
+
 .nav ul {
     list-style: none;
     padding: 0;
     margin-left: -20px;
 }
 
-@media (min-width: 725px){
+@media (min-width: 725px) {
     .nav li {
         display: inline-block;
     }
+
     .nav li + li {
         margin-left: 10px;
     }
@@ -154,6 +173,7 @@ body {
     padding: 10px 20px;
 
 }
+
 .nav .active,
 .nav a:hover {
     color: #be926f;
@@ -167,6 +187,7 @@ body {
     background: url("../images/Bag.png") center center no-repeat;
 
 }
+
 .bag::after {
     position: relative;
     top: -8px;

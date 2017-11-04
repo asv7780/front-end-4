@@ -27,20 +27,42 @@ span {
     padding: 0 14px;
 }
 .user {
-    float: right;
     text-align: right;
+
 }
 .user a:hover {
     text-decoration: none;
     color: #be926f;
 }
+@media (max-width: 767px) {
+    .tel,
+    .user {
+        width: 100%;
+        text-align: center;
+    }
+    .user {
+        padding-top: 10px;
+    }
+}
 form {
-    float: right;
     border: 1px solid #323232;
     width: 274px;
     height: 46px;
 }
+@media (max-width: 767px) {
+    .logo {
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .form {
+        padding-top: 15px;
+        text-align: justify;
+    }
+
+}
 .header-middle {
+
     background-color: #232323;
     padding-top: 31px;
     padding-bottom: 26px;
@@ -91,6 +113,14 @@ li + li {
 .nav a {
     font-size: 16px;
     line-height: 1.5;
+
+}
+
+@media (max-width: 767px) {
+    .nav li {
+        display: block;
+        margin: 0;
+    }
 
 }
 .bag {

@@ -1,16 +1,14 @@
-html {
 
-
-}    
 body {
     font-family: 'Montserrat', sans-serif;
     min-width: 320px;
-
 }
+
 .header {
     max-width: 1170px;
-
+    margin: 0 auto;
 }
+
 .header-top {
     background-color: #2b2b2b;
     height: 34px;
@@ -22,51 +20,59 @@ a {
     font-size: 14px;
     line-height: 1.7142;
 }
+
 span {
     color: #3b3b3b;
     padding: 0 14px;
 }
-.user {
+
+.user-top {
     text-align: right;
 
 }
-.user a:hover {
+
+.user-top a:hover {
     text-decoration: none;
     color: #be926f;
 }
+
 @media (max-width: 767px) {
-    .tel,
-    .user {
+    .tel-top,
+    .user-top {
         width: 100%;
         text-align: center;
     }
-    .user {
+
+    .user-top {
         padding-top: 10px;
     }
 }
+
 form {
     border: 1px solid #323232;
     width: 274px;
     height: 46px;
+    margin: 0 auto;
 }
+
 @media (max-width: 767px) {
     .logo {
         width: 100%;
         text-align: center;
         padding-top: 10px;
     }
-    .form {
+
+    .header-form {
         padding-top: 15px;
-        text-align: justify;
     }
-
 }
-.header-middle {
 
+.header-middle {
     background-color: #232323;
     padding-top: 31px;
     padding-bottom: 26px;
 }
+
 .search,
 .search::placeholder {
     font-weight: 200;
@@ -74,6 +80,7 @@ form {
     font-size: 13px;
     line-height: 1.8461;
 }
+
 .search {
     padding: 10px 10px 0 26px;
     background: transparent;
@@ -81,14 +88,15 @@ form {
     color: #fff;
     outline: none;
 }
+
 button {
     float: right;
     width: 54px;
     height: 44px;
-    background: transparent url("../images/Search.png")center center no-repeat;
+    background: transparent url("../images/Search.png") center center no-repeat;
     border: none;
-
 }
+
 .header-bottom {
     background-color: #232323;
     padding-bottom: 48px;
@@ -98,37 +106,43 @@ ul {
     margin: 0 auto;
     padding-left: 15px;
 }
+
 li {
     display: inline-block;
 
 }
+
 li + li {
     margin-left: 50px;
 }
-.nav .active,
-.nav a:hover {
+
+.header-nav .active,
+.header-nav a:hover {
     color: #be926f;
     text-decoration: none;
 }
-.nav a {
+
+.header-nav a {
     font-size: 16px;
     line-height: 1.5;
 
 }
 
 @media (max-width: 767px) {
-    .nav li {
+    .header-nav li {
         display: block;
         margin: 0;
     }
 
 }
+
 .bag {
     background: url(../images/Bag.png) no-repeat;
     width: 17px;
     height: 22px;
     float: right;
 }
+
 .bag::after {
     position: relative;
     top: -8px;

@@ -36,6 +36,15 @@ span {
 .container-top a:hover {
     color: #be926f;
 }
+@media (max-width: 767px) {
+    .container-top {
+        flex-direction: column;
+        justify-content: center;
+        height: 70px;
+    }
+
+}
+
 
 .container-middle {
     width: 100%;
@@ -76,7 +85,13 @@ button {
     background: transparent url("../images/Search.png") center center no-repeat;
     border: none;
 }
+@media (max-width: 767px) {
+    .container-middle {
+        flex-direction: column;
+        justify-content: center;
+    }
 
+}
 .container-bottom {
     width: 100%;
     height: 60px;
@@ -105,7 +120,27 @@ li {
 li + li {
     margin-left: 50px;
 }
+@media (max-width: 767px) {
+    .container-bottom {
+        flex-direction: row;
+        height: 100%;
+    }
+    .header-nav {
+        width: 100%;
+        text-align: center;
+    }
 
+    li {
+        display: block;
+    }
+    li + li {
+        margin-left: 0;
+    }
+    .craft {
+        justify-content: flex-end;
+    }
+
+}
 .active,
 .header-nav a:hover {
     color: #be926f;

@@ -2,6 +2,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     min-width: 320px;
 }
+.header {
+    margin: 0 auto;
+    background-color: #232323;
+}
 
 .flex-container {
     max-width: 1170px;

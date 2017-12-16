@@ -8,6 +8,8 @@
 }
 body {
     font-family: 'Open Sans', 'Lato', sans-serif;
+
+
 }
  .main {
      display: flex;
@@ -16,11 +18,9 @@ body {
      align-items: center;
      height: 100vh;
      min-height: 700px;
-     max-width: 1170px;
      background: url("../images/BGraund-Banner.png") no-repeat center top;
      background-size: cover;
      position: relative;
-     margin: 0 auto;
  }
 .main-overlay {
     position: absolute;
@@ -33,7 +33,7 @@ body {
     background-image: url("../images/image.png");
 }
 .wraper {
-    width: 1170px;
+    width: 100%;
     background-color: rgba(16, 22, 54, .2);
 }
 .header {
@@ -216,10 +216,8 @@ body {
     flex-direction: column;
     height: 100vh;
     min-height: 430px;
-    max-width: 1170px;
     position: relative;
     background-color: #efefef;
-    margin: 0 auto;
 }
 .wraper-features {
     position: relative;
@@ -301,10 +299,8 @@ body {
     flex-direction: column;
     height: 100vh;
     min-height: 1205px;
-    max-width: 1170px;
     position: relative;
     background-color: #fff;
-    margin: 0 auto;
 }
 .wraper-works {
     position: relative;
@@ -330,10 +326,23 @@ body {
     align-items: center;
     justify-content: space-around;
 }
-.iphone-text-1 .iphone-text-2 {
+.iphone-text-1,
+.iphone-text-2 {
     display: flex;
     flex-direction: column;
+}
+.iphone-item-text {
+    position: relative;
+    padding-left: 30px;
+}
 
+.works-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
 }
 
 .iphone h3 {
@@ -353,7 +362,7 @@ body {
     margin-right: 48px;
 }
 .box-1, .box-2, .box-3,
-.box-4, .box-5, .box-6{
+.box-4, .box-5, .box-6 {
     display: flex;
     align-items: flex-start;
     margin-left: 38px;
@@ -365,31 +374,31 @@ body {
 }
 .iphone-Phone {
     display: flex;
-    height: 552px;
-    width: 263px;
-    background: url("../images/iphone.png") no-repeat center;
+    height: 608px;
+    width: 350px;
+    background: url("../images/IPHONE-5.png") no-repeat center;
     flex: none;
 }
 
-.iphone-overlay {
-    position: absolute;
-    width: 238px;
-    height: 407px;
-    margin-top: 76px;
-    margin-left: 14px;
-    z-index: 0;
-    background-image: url("../images/ipone-overlay.png");
-}
-
-.iphone-shadow {
-    position: absolute;
-    width: 350px;
-    height: 119px;
+/*.iphone-overlay {*/
+    /*position: absolute;*/
+    /*width: 238px;*/
+    /*height: 407px;*/
     /*margin-top: 76px;*/
     /*margin-left: 14px;*/
-    z-index: 0;
-    background-image: url("../images/iphone shadow.png");
-}
+    /*z-index: 0;*/
+    /*background-image: url("../images/ipone-overlay.png");*/
+/*}*/
+
+/*.iphone-shadow {*/
+    /*position: absolute;*/
+    /*width: 350px;*/
+    /*height: 119px;*/
+    /*!*margin-top: 76px;*!*/
+    /*!*margin-left: 14px;*!*/
+    /*z-index: 0;*/
+    /*background-image: url("../images/iphone shadow.png");*/
+/*}*/
 
 .works h2 {
     font-family: 'Lato', sans-serif;
@@ -399,7 +408,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     color: #4c76ff;
-    margin-top: 132px;
+    margin-top: 80px;
     margin-bottom: 25px;
 }
 
@@ -468,12 +477,9 @@ body {
     margin-right: 54px;
 }
 .photos {
-    /*display: flex;*/
+    display: flex;
     min-height: 440px;
-    max-width: 1170px;
     position: relative;
-    background-color: cornflowerblue;
-    margin: 0 auto;
 }
 .photo-nav {
     display: flex;
@@ -484,14 +490,36 @@ body {
 }
 
 .photo-nav li {
-    display: flex;
     width: 25%;
+    height: auto;
+    position: relative;
     /*flex: none;*/
 }
 .photo-nav li p {
     margin: 0 auto;
 
 }
+.photo-nav img {
+    width: 100%;
+    height: 100%;
+}
+
+.photo-nav a {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(94, 131, 255, .9);
+}
+.photo-nav li:hover .photo-nav-info {
+    display: flex;
+}
+
 .team {
     display: flex;
     flex-direction: column;

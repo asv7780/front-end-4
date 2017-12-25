@@ -2,25 +2,27 @@ body {
     font-family: 'Montserrat', sans-serif;
     min-width: 320px;
 }
-.header {
-    margin: 0 auto;
-    background-color: #232323;
-}
 
-.flex-container {
+.wrapper-top,
+.wrapper-middle,
+.wrapper-bottom,
+.header-bottom-2 {
+    display: flex;
+    justify-content: space-between;
     max-width: 1170px;
     margin: 0 auto;
-
 }
 
 .container-top {
     width: 100%;
-    height: 34px;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
     background-color: #2b2b2b;
-    align-items: center;
+
+}
+
+.top-tel,
+.top-user {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .container-top a {
@@ -40,25 +42,17 @@ span {
 .container-top a:hover {
     color: #be926f;
 }
-@media (max-width: 767px) {
-    .container-top {
-        flex-direction: column;
-        justify-content: center;
-        height: 70px;
-    }
-
-}
-
 
 .container-middle {
     width: 100%;
-    height: 109px;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
+    height: 100%;
+    padding-bottom: 26px;
     background-color: #232323;
-    align-items: center;
 
+}
+
+.wrapper-middle a, form {
+    margin-top: 30px;
 }
 
 .finder {
@@ -66,6 +60,7 @@ span {
     width: 274px;
     height: 46px;
 }
+
 .search,
 .search::placeholder {
     font-weight: 200;
@@ -89,25 +84,20 @@ button {
     background: transparent url("../images/Search.png") center center no-repeat;
     border: none;
 }
-@media (max-width: 767px) {
-    .container-middle {
-        flex-direction: column;
-        justify-content: center;
-    }
 
-}
 .container-bottom {
     width: 100%;
-    height: 60px;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
     background-color: #232323;
-    align-items: center;
 }
+
+.header-nav {
+    margin-bottom: 20px;
+}
+
 ul {
     padding: 0;
 }
+
 ul a {
     text-decoration: none;
     color: #ffffff;
@@ -126,11 +116,13 @@ li {
 li + li {
     margin-left: 50px;
 }
+
 @media (max-width: 767px) {
     .container-bottom {
         flex-direction: row;
         height: 100%;
     }
+
     .header-nav {
         width: 100%;
         text-align: center;
@@ -139,14 +131,17 @@ li + li {
     li {
         display: block;
     }
+
     li + li {
         margin-left: 0;
     }
+
     .craft {
         justify-content: flex-end;
     }
 
 }
+
 .active,
 .header-nav a:hover {
     color: #be926f;
@@ -158,6 +153,10 @@ li + li {
     height: 22px;
     float: right;
     padding-right: 10px;
+}
+
+.craft {
+    margin-top: 20px;
 }
 
 .bag::after {
@@ -180,7 +179,7 @@ li + li {
     width: 100%;
     height: 177px;
     background-color: #f7f7f7;
-    display: inline-flex;
+    display: flex;
     align-items: center;
 }
 
@@ -188,11 +187,12 @@ li + li {
     width: 100%;
     height: 117px;
     background-color: #e7e7e7;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: flex;
+    /*justify-content: space-between;*/
     align-items: center;
+
 }
+
 .header-contact a {
     font-size: 30px;
     line-height: 0.8;
@@ -201,9 +201,11 @@ li + li {
     padding-left: 28px;
 
 }
+
 .header-home {
     padding-right: 15px;
 }
+
 .header-home a,
 .header-home span {
     font-size: 14px;
@@ -212,6 +214,57 @@ li + li {
     text-decoration: none;
     padding: 0;
 }
+
 .header-home a:hover {
     color: #666;
+}
+@media (max-width: 991px){
+    .wrapper-top,
+    .wrapper-middle,
+    .wrapper-bottom {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .wrapper-top,
+    .wrapper-middle,
+    .wrapper-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .container-top {
+        height: 100%;
+    }
+
+    .top-tel {
+        margin-left: 5px;
+    }
+
+    .top-user {
+        margin-right: 5px;
+    }
+
+    .header-nav {
+        margin-bottom: 0;
+    }
+
+    li {
+        margin-top: 10px;
+    }
+
+    .header-bottom-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .craft {
+        margin-bottom: 20px;
+    }
 }

@@ -5,27 +5,17 @@ $ (function () {
     $ ('.persons').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         arrows: false,
         autoplaySpeed: 2000,
         responsive: [
             {
-                breakpoint: 768,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    // centerPadding: '40px',
-                    slidesToShow: 3
-                }
+                breakpoint: 2000,
+                settings: "slick"
             },
             {
-                breakpoint: 480,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    // centerPadding: '40px',
-                    slidesToShow: 1
-                }
+                breakpoint: 768,
+                settings: "unslick"
             }
         ]
     });

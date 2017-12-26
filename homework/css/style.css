@@ -622,6 +622,12 @@ h2 {
     margin-left: 16px;
 
 }
+.one-person-cop {
+    display: none;
+    position: relative;
+    width: 23%;
+    margin-left: 16px;
+}
 
 .one-person img {
     width: 100%;
@@ -1208,6 +1214,26 @@ h4 {
         margin-top: 40px;
     }
 
+    .team h2 {
+        margin: 40px auto;
+    }
+    .team-heart {
+        margin-bottom: 35px;
+    }
+    .team-beginning {
+        width: 90%;
+    }
+    .persons {
+        margin: 20px auto;
+    }
+    .one-person {
+        width: 20%;
+        margin-left: 5px;
+    }
+    .person-name {
+        margin-bottom: 10px;
+    }
+
     .discuss h2 {
         margin-top: 40px;
     }
@@ -1333,6 +1359,12 @@ h4 {
 
     .photo-nav li {
         width: 100%;
+    }
+    .one-person {
+        width: 45%;
+    }
+    .person-name {
+        margin-bottom: 40px;
     }
 
     .wraper-facts {

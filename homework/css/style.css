@@ -944,11 +944,27 @@ h2 {
 
 .form-field {
     display: flex;
+    position: relative;
     width: 48%;
 
 }
 
+#user-error,
+#Email-error {
+    position: absolute;
+    font-size: 11px;
+    color: red;
+    padding-left: 4px;
+}
+#sms-error {
+    position: absolute;
+    left: 4px;
+    font-size: 11px;
+    color: red;
+}
+
 .form-field-3 {
+    position: relative;
     width: 100%;
 }
 
@@ -1249,6 +1265,9 @@ h4 {
     .contacts {
         width: 90%;
         margin: 40px auto;
+    }
+    #sms-error {
+
     }
 
     .wraper-footer {

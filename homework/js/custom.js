@@ -22,7 +22,6 @@ $ (function () {
 });
 
 
-
 $ (".facts-counter").each(function () {
     $(this).prop('Counter',0).animate({
         Counter: $(this).text()
@@ -35,6 +34,30 @@ $ (".facts-counter").each(function () {
     });
 });
 
+$ (function () {
+    $ ("form[name='userForm']").validate({
+        rules :{
+            user :{
+                required: true
+            },
+            Email :{
+                required: true
+            },
+            sms :{
+                required: true
+            }
+        },
+        messages:{
+            user: "Please, enter your name",
+            Email: "Please, enter your Email",
+            sms: "Please, enter your text"
+
+        },
+        submitHandler: function (form) {
+            form.submit();
+        }
+    });
+});
 
 function initMap() {
     var centerLatLng = new google.maps.LatLng(49.423631, 26.986471);

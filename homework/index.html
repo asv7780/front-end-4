@@ -169,18 +169,18 @@
             laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
         <div class="works-navigation">
             <ul class="works-filter">
-                <li class="filter-item"><a href="#" class="filter-link">All</a></li>
-                <li class="filter-item"><a href="#" class="filter-link">Branding</a></li>
-                <li class="filter-item"><a href="#" class="filter-link">Web</a></li>
-                <li class="filter-item"><a href="#" class="filter-link">Logo Design</a></li>
-                <li class="filter-item"><a href="#" class="filter-link">Photography</a></li>
+                <li class="filter-item"><a href="#" class="filter-link" data-filter="all">All</a></li>
+                <li class="filter-item"><a href="#" class="filter-link" data-filter=".branding">Branding</a></li>
+                <li class="filter-item"><a href="#" class="filter-link" data-filter=".web">Web</a></li>
+                <li class="filter-item"><a href="#" class="filter-link" data-filter=".logo-design">Logo Design</a></li>
+                <li class="filter-item"><a href="#" class="filter-link" data-filter=".photography">Photography</a></li>
             </ul>
         </div>
     </div>
 </div>
 <div class="photos">
     <ul class="photo-nav">
-        <li class="photo-1">
+        <li class="mix web">
             <img src="images/Photo-1.png" alt="">
             <a href="#" class="photo-nav-info">
                 <i class="fa fa-eye" aria-hidden="true"></i>
@@ -188,7 +188,7 @@
                 <p>Photography</p>
             </a>
         </li>
-        <li class="photo-2">
+        <li class="mix logo-design">
             <img src="images/Photo-2.png" alt="">
             <a href="#" class="photo-nav-info">
                 <i class="fa fa-eye" aria-hidden="true"></i>
@@ -196,7 +196,7 @@
                 <p>Photography</p>
             </a>
         </li>
-        <li class="photo-3">
+        <li class="mix photography">
             <img src="images/Photo-3.png" alt="">
             <a href="#" class="photo-nav-info">
                 <i class="fa fa-eye" aria-hidden="true"></i>
@@ -204,7 +204,7 @@
                 <p>Photography</p>
             </a>
         </li>
-        <li class="photo-4">
+        <li class="mix branding">
             <img src="images/Photo-4.png" alt="">
             <a href="#" class="photo-nav-info">
                 <i class="fa fa-eye" aria-hidden="true"></i>
@@ -212,7 +212,7 @@
                 <p>Photography</p>
             </a>
         </li>
-        <li class="photo-5">
+        <li class="mix photography">
             <img src="images/Photo-5.png" alt="">
             <a href="#" class="photo-nav-info">
                 <i class="fa fa-eye" aria-hidden="true"></i>
@@ -220,7 +220,7 @@
                 <p>Photography</p>
             </a>
         </li>
-        <li class="photo-6">
+        <li class="mix branding">
             <img src="images/Photo-6.png" alt="">
             <a href="#" class="photo-nav-info">
                 <i class="fa fa-eye" aria-hidden="true"></i>
@@ -228,7 +228,7 @@
                 <p>Photography</p>
             </a>
         </li>
-        <li class="photo-7">
+        <li class="mix web">
             <img src="images/Photo-7.png" alt="">
             <a href="#" class="photo-nav-info">
                 <i class="fa fa-eye" aria-hidden="true"></i>
@@ -236,7 +236,7 @@
                 <p>Photography</p>
             </a>
         </li>
-        <li class="photo-8">
+        <li class="mix web">
             <img src="images/Photo-8.png" alt="">
             <a href="#" class="photo-nav-info">
                 <i class="fa fa-eye" aria-hidden="true"></i>
@@ -394,22 +394,22 @@
         <ul id="counter" class="facts-list">
             <li class="facts-item">
                 <div class="facts-icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
-                <div data-num="3200" class="facts-counter">0</div>
+                <div class="facts-counter">3200</div>
                 <div class="results">Hours of Work</div>
             </li>
             <li class="facts-item">
                 <div class="facts-icon"><i class="fa fa-users" aria-hidden="true"></i></div>
-                <div data-num="120" class="facts-counter">0</div>
+                <div class="facts-counter">120</div>
                 <div class="results">Satisfied Clinets</div>
             </li>
             <li class="facts-item">
                 <div class="facts-icon"><i class="fa fa-rocket" aria-hidden="true"></i></div>
-                <div data-num="360" class="facts-counter">0</div>
+                <div class="facts-counter">360</div>
                 <div class="results">Projects delivered</div>
             </li>
             <li class="facts-item">
                 <div class="facts-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
-                <div data-num="42" class="facts-counter">0</div>
+                <div class="facts-counter">42</div>
                 <div class="results">Awards Won</div>
             </li>
         </ul>
@@ -515,8 +515,10 @@
 
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
 <script type="text/javascript" src="js/jquery.validate.min.js"></script>
 <script type="text/javascript" src="js/additional-methods.min.js"></script>
+<script type="text/javascript" src="js/jquery.spincrement.min.js"></script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMhf85fF2JTGVq7S8SOL1prKhemmV6fMk&callback=initMap"
         type="text/javascript"></script>

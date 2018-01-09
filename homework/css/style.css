@@ -463,6 +463,7 @@ h2 {
     display: flex;
     justify-content: center;
     list-style: none;
+    padding: 0;
 }
 
 .filter-link {
@@ -481,7 +482,9 @@ h2 {
 }
 
 .filter-item {
-    margin-right: 54px;
+    /*margin-right: 54px;*/
+    text-align: center;
+    width: 16%;
 }
 
 .photos {
@@ -1105,7 +1108,7 @@ h4 {
 
 .footer-form-icon {
     position: absolute;
-    right: 50px;
+    margin-left: 216px;
     height: 100%;
 }
 
